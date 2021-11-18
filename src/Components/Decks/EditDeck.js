@@ -80,9 +80,9 @@ function EditDeck() {
           ></textarea>
         </div>
         {/*If the user clicks "Cancel", the user is taken to the Deck screen.*/}
-        <button type="button" className="btn btn-secondary m-2">
+        <Link to={`/decks/${deck.id}`} className="btn btn-secondary m-2">
           Cancel
-        </button>
+        </Link>
         <button type="submit" className="btn btn-primary">
           Submit
         </button>

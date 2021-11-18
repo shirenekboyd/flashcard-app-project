@@ -1,9 +1,9 @@
 {
   "decks": [
     {
-      "id": 1,
-      "name": "Rendering in React",
-      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+      "name": "input ",
+      "description": "React's component structure allows for quickly building a complex web application",
+      "id": 1
     },
     {
       "name": "React Router",
@@ -13,15 +13,9 @@
   ],
   "cards": [
     {
-      "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
-      "back": "Virtual DOM updates are faster but do not directly update the HTML",
-      "deckId": 1
-    },
-    {
-      "id": 2,
-      "front": "How do you modify the state of a different React component?",
+      "front": "test",
       "back": "Not at all! State is visible to the component only.",
+      "id": 2,
       "deckId": 1
     },
     {
@@ -48,6 +42,18 @@
       "back": "b",
       "deckId": 1,
       "id": 7
+    },
+    {
+      "front": "new front",
+      "back": "new back",
+      "deckId": 1,
+      "id": 8
+    },
+    {
+      "front": "new input",
+      "back": "back input",
+      "id": 9,
+      "deckId": 1
     }
   ]
 }

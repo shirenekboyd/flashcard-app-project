@@ -38,7 +38,7 @@ export default function Deck() {
 
   const cardList = deck.cards.map(({ front, back, id }) => {
     return (
-      <div className="card w-75 m-2">
+      <div className="card w-75 m-2" key={id}>
         <div className="card-body">
           <p className="card-text">{front}</p>
           <p className="card-text">{back}</p>

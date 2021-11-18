@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useRouteMatch, useParams } from "react-router-dom";
+import { useRouteMatch, useParams, Link } from "react-router-dom";
 import { readDeck, readCard } from "../../utils/api";
 
 export default function FormCard({ handleSubmit }) {
@@ -74,22 +74,22 @@ export default function FormCard({ handleSubmit }) {
 
       {isEdit ? (
         <>
-          <button
+          <Link
             to={`/decks/${deck.id}`}
             type="button"
             className="btn btn-secondary m-2"
           >
             Cancel
-          </button>
+          </Link>
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </>
       ) : (
         <>
-          <button type="button" className="btn btn-secondary m-2">
+          <Link to={`/decks/${deck.id}`} className="btn btn-secondary m-2">
             Done
-          </button>
+          </Link>
           <button type="submit" className="btn btn-primary">
             Save
           </button>
